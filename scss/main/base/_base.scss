@@ -1,0 +1,20 @@
+body {
+  @include font-smoothing(on);
+  background: white;
+  color: $grey;
+  font-family: 'gidole', 'helvetica neue', helvetica, sans-serif;
+  font-size: 18px;
+}
+
+// removes blue border from buttons
+button:focus {
+  outline: 0;
+}
+
+// pseudo classes
+a {
+  color: $primary-color;
+  &:link, &:visited, &:hover, &:active, &:focus {
+    color: $primary-color;
+  }
+}

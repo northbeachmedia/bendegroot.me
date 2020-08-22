@@ -1,0 +1,17 @@
+// keyframe rule specifying the animation selector
+@-webkit-keyframes slideup {
+  0%   {top: 100px; opacity: 0; }
+  15%  {top: 100px; opacity: 0; }
+  50%  {top: 0px; }
+  75%  {top: 0px; }
+  100% {top: 0px; }
+}
+
+// keyframe rule specifying the animation selector
+@keyframes slideup {
+  0%   {top: 100px; opacity: 0; }
+  15%  {top: 100px; opacity: 0; }
+  50%  {top: 0px; }
+  75%  {top: 0px; }
+  100% {top: 0px; }
+}

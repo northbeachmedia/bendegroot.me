@@ -1,0 +1,50 @@
+header {
+  margin: 50px 0px 50px 0px;
+  padding: 0px 25px 15px 25px;
+  border-bottom: 2px lighten($grey, 50%) solid;
+  .col-md-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  h1 {
+    @include primary-text(50px, left, $grey, $grey);
+    display: inline-block;
+    font-family: 'kollektif', 'helvetica neue', helvetica, sans-serif;
+    margin-bottom: 0px;
+    position: absolute; bottom: 0;
+    width: 100%;
+  }
+  .list-group {
+    float: right;
+    .list-group-item {
+      background-color: white;
+      border: none;
+      padding: 0px 0px 5px 0px;
+    }
+  }
+  @media (max-width: 768px) {
+    header {
+      padding: 0px 0px 0px 0px;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      position: static;
+      text-align: center;
+    }
+    .list-group {
+      float: none;
+      .list-group-item {
+        background-color: white;
+        border: none;
+        padding: 0px 0px 5px 0px;
+        text-align: center;
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}

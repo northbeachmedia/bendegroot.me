@@ -1,0 +1,4 @@
+.button {
+  @include button($primary-color, $primary-color, white);
+  @include primary-text(1.5rem, center, white, $primary-color);
+}

@@ -1,0 +1,49 @@
+@mixin primary-text($font-size, $text-align, $color, $hover-color) {
+  font-size: $font-size;
+  font-weight: 400;
+  text-align: $text-align;
+  color: $color;
+  &:visited, &:hover, &:focus, &:active {
+    color: $hover-color;
+  }
+}
+
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+@mixin animation-slideup($animation-name, $animation-duration, $animation-iteration) {
+  position: relative;
+  -webkit-animation-name: $animation-name;
+  -webkit-animation-duration: $animation-duration;
+  -webkit-animation-iteration-count: $animation-iteration;
+  animation-name: $animation-name;
+  animation-duration: $animation-duration;
+  animation-iteration-count: $animation-iteration;
+}
+
+@mixin button($background-color, $border-color, $hover-background-color) {
+  margin: 0px 0px 50px 0px;
+  max-width: 300px; width: 100%;
+  background-color: $background-color;
+  border: 3px solid $border-color;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-transition: background-color .5s ease;
+  -moz-transition: background-color .5s ease;
+  -o-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+  &:hover {
+    background-color: $hover-background-color
+  }
+  @media (max-width: 992px) {
+    margin: 25px auto 25px auto;
+  }
+}

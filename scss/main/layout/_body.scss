@@ -1,0 +1,31 @@
+.resume-body {
+  hr {
+    border-top: 2px lighten($grey, 50%) solid;
+    width: 50px;
+  }
+}
+
+.profile, .skills, .software-experience, .online-samples, .references {
+  margin-bottom: 50px;
+}
+
+.education, .experience {
+  margin-bottom: 50px;
+}
+
+.education-details, .experience-details {
+  margin-bottom: 50px;
+  p {
+    margin-bottom: 5px;
+  }
+  p.title {
+    font-family: 'kollektif', 'helvetica neue', helvetica, sans-serif;
+    font-size: 20px;
+  }
+  ul {
+    margin-left: 15px;
+    li {
+      margin: 10px 15px 0px 0px;
+    }
+  }
+}
